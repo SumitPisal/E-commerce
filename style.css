@@ -68,7 +68,7 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    background: url('public/logo3.jpg') no-repeat center center/cover;
+    background: url('./public/logo3.jpg') no-repeat center center/cover;
     z-index: -1;
     opacity: 90.89;
     height: 77%;
