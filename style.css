@@ -1,0 +1,155 @@
+* {
+    margin: 0px;
+    /* sometimes the browser will apply it's default margin/padding to elements so set to zero*/
+    padding: 0px;
+}
+
+#navbar {
+    position: relative;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(57, 52, 52);
+    z-index: -1;
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#logo img {
+    margin: 5px 20px;
+    height: 62px;
+}
+
+#navbar ul {
+    display: flex;
+    /*by default arranged in row due to display flex*/
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 3px 20px;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navbar ul li a:hover {
+    color: rgb(29, 7, 7);
+    background-color: rgb(183, 162, 162);
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 471px;
+    padding: 30px 80px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('logo3.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 90.89;
+    height: 77%;
+    width: 100%;
+}
+
+#home h1 {
+    color: rgb(156, 100, 134);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#home p {
+    font-size: 1.5rem;
+    color: rgb(25, 26, 27);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.h1-primary {
+    font-size: 2.8rem;
+    padding: 24px
+}
+
+.btn {
+    border: 2px solid black;
+    margin: 18px 5px;
+    padding: 12px 15px;
+    font-size: 1.1rem;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(240, 227, 227);
+}
+
+.center {
+    text-align: center;
+}
+
+.h1-primary {
+    font-size: 3.2rem;
+    padding: 12px;
+}
+
+.h1-secondary {
+    font-size: 2.5rem;
+    padding: 12px;
+}
+
+#services {
+    display: flex;
+    margin: 30px;
+}
+
+#services .box {
+
+    border: 3px solid rgb(23, 20, 20);
+    padding: 10px 10px;
+    margin: 10px 40px;
+    border-radius: 15px;
+}
+
+#services .box img {
+    display: block;
+    margin: auto;
+    height: 150px;
+}
+
+#sale::before {
+    content: "";
+    position: absolute;
+    background: url('logo10.jpg') no-repeat center center/cover;
+    height: 78%;
+    width: 100%;
+    z-index: -1;
+    opacity: 90;
+}
+
+.h1k {
+    padding-top: 340px;
+    text-align: center;
+    font-size: 3.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
